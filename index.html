@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Simple Instagram Photo Feed</title>
+        <meta name="author" content="Ibai Fernández">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    </head>
+
+    <body>
+        <div id="sidebar">
+            <div id="logo">
+                <h1><a href="#">Instagram</a></h1>
+            </div>
+
+            <nav>
+                <a class="sidebar-links" href="#">
+                    <div class="nav-divs">
+                        <div class="nav-icon">
+                            <i class="fa fa-home"></i>
+                        </div>
+                        <div class="nav-tag">
+                            <span>Home</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="sidebar-links" href="#">
+                    <div class="nav-divs">
+                        <div class="nav-icon">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="nav-tag">
+                            <span>Search</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="sidebar-links" href="#">
+                    <div class="nav-divs">
+                        <div class="nav-icon">
+                            <i class="fa fa-compass"></i>
+                        </div>
+                        <div class="nav-tag">
+                            <span>Explore</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="sidebar-links" href="#">
+                    <div class="nav-divs">
+                        <div class="nav-icon">
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="nav-tag">
+                            <span>Notifications</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="sidebar-links" href="#">
+                    <div class="nav-divs">
+                        <div class="nav-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="nav-tag">
+                            <span>Messages</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="sidebar-links" href="#">
+                    <div class="nav-divs">
+                        <div class="nav-icon">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="nav-tag">
+                            <span>Create</span>
+                        </div>
+                    </div>
+                </a>
+                <a class="sidebar-links" href="#">
+                    <div class="nav-divs">
+                        <div class="nav-icon">
+                            <span><a href="#"><img class="profile-img" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg"></a></span>
+                        </div>
+                        <div class="nav-tag">
+                            <span><a href="#">Profile</a></span>
+                        </div>
+                    </div>
+                </a>
+            </nav>
+            <div id="burger-menu">
+                <div class="nav-icon">
+                    <i class="fa fa-bars"><a href="#"></a></i>
+                </div>
+                <div class="nav-tag">
+                    <span><a href="#">More</a></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="main">
+            
+            <div id="photo-feed">
+                
+                <div class="post">
+                    <div class="post-header">
+                        <div class="user-id">
+                            <img class="user-profile-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            <span class="user-profile-name">Ibai Fernández</span>
+                        </div>
+                        <span class="three-dots">· · ·</span>
+                    </div>
+                    <img class="post-image" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div class="post-icons">
+                        <div class="post-icons-123">
+                            <span class="fa fa-heart" style="color:red;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-envelope" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-share" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                        </div>
+                        <div class="post-icons-4">
+                            <span class="fa fa-save" style="color:lightblue;font-size:36px;padding:10px 0;margin:0 auto;"></span>
+                        </div>
+                    </div>
+                    <div id="post-texts">
+                        <div class="likes">
+                            <div class=likes-pics>
+                                <img class="likes-pic-1" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-2" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-3" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            </div>
+                                <span class="liker">mmontufarq and 600 more users </span>like this pic</span>
+                        </div>
+                        <p class="description"><span class="user-name">ibaifernandezec </span>Here's the description of my picture...</p>
+                        <p class="comment-number">See 2.453 comments.</span></p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="time">27 DIC.</p>
+                        <div class="comment-box">
+                            <div class="emoji-selector"></div>
+                            <div class="comment-textbox">
+                                <form id="comment-form">
+                                    <label><input type="text" name="comment" placeholder="Add a comment..."</label>
+                                    <input type="submit" value="Publish">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post-header">
+                        <div class="user-id">
+                            <img class="user-profile-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            <span class="user-profile-name">Ibai Fernández</span>
+                        </div>
+                        <span class="three-dots">· · ·</span>
+                    </div>
+                    <img class="post-image" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div class="post-icons">
+                        <div class="post-icons-123">
+                            <span class="fa fa-heart" style="color:red;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-envelope" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-share" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                        </div>
+                        <div class="post-icons-4">
+                            <span class="fa fa-save" style="color:lightblue;font-size:36px;padding:10px 0;margin:0 auto;"></span>
+                        </div>
+                    </div>
+                    <div id="post-texts">
+                        <div class="likes">
+                            <div class=likes-pics>
+                                <img class="likes-pic-1" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-2" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-3" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            </div>
+                                <span class="liker">mmontufarq and 600 more users </span>like this pic</span>
+                        </div>
+                        <p class="description"><span class="user-name">ibaifernandezec </span>Here's the description of my picture...</p>
+                        <p class="comment-number">See 2.453 comments.</span></p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="time">27 DIC.</p>
+                        <div class="comment-box">
+                            <div class="emoji-selector"></div>
+                            <div class="comment-textbox">
+                                <form id="comment-form">
+                                    <label><input type="text" name="comment" placeholder="Add a comment..."</label>
+                                    <input type="submit" value="Publish">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post-header">
+                        <div class="user-id">
+                            <img class="user-profile-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            <span class="user-profile-name">Ibai Fernández</span>
+                        </div>
+                        <span class="three-dots">· · ·</span>
+                    </div>
+                    <img class="post-image" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div class="post-icons">
+                        <div class="post-icons-123">
+                            <span class="fa fa-heart" style="color:red;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-envelope" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-share" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                        </div>
+                        <div class="post-icons-4">
+                            <span class="fa fa-save" style="color:lightblue;font-size:36px;padding:10px 0;margin:0 auto;"></span>
+                        </div>
+                    </div>
+                    <div id="post-texts">
+                        <div class="likes">
+                            <div class=likes-pics>
+                                <img class="likes-pic-1" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-2" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-3" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            </div>
+                                <span class="liker">mmontufarq and 600 more users </span>like this pic</span>
+                        </div>
+                        <p class="description"><span class="user-name">ibaifernandezec </span>Here's the description of my picture...</p>
+                        <p class="comment-number">See 2.453 comments.</span></p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="time">27 DIC.</p>
+                        <div class="comment-box">
+                            <div class="emoji-selector"></div>
+                            <div class="comment-textbox">
+                                <form id="comment-form">
+                                    <label><input type="text" name="comment" placeholder="Add a comment..."</label>
+                                    <input type="submit" value="Publish">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <div class="user-id">
+                            <img class="user-profile-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            <span class="user-profile-name">Ibai Fernández</span>
+                        </div>
+                        <span class="three-dots">· · ·</span>
+                    </div>
+                    <img class="post-image" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div class="post-icons">
+                        <div class="post-icons-123">
+                            <span class="fa fa-heart" style="color:red;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-envelope" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-share" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                        </div>
+                        <div class="post-icons-4">
+                            <span class="fa fa-save" style="color:lightblue;font-size:36px;padding:10px 0;margin:0 auto;"></span>
+                        </div>
+                    </div>
+                    <div id="post-texts">
+                        <div class="likes">
+                            <div class=likes-pics>
+                                <img class="likes-pic-1" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-2" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-3" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            </div>
+                                <span class="liker">mmontufarq and 600 more users </span>like this pic</span>
+                        </div>
+                        <p class="description"><span class="user-name">ibaifernandezec </span>Here's the description of my picture...</p>
+                        <p class="comment-number">See 2.453 comments.</span></p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="time">27 DIC.</p>
+                        <div class="comment-box">
+                            <div class="emoji-selector"></div>
+                            <div class="comment-textbox">
+                                <form id="comment-form">
+                                    <label><input type="text" name="comment" placeholder="Add a comment..."</label>
+                                    <input type="submit" value="Publish">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post-header">
+                        <div class="user-id">
+                            <img class="user-profile-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            <span class="user-profile-name">Ibai Fernández</span>
+                        </div>
+                        <span class="three-dots">· · ·</span>
+                    </div>
+                    <img class="post-image" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div class="post-icons">
+                        <div class="post-icons-123">
+                            <span class="fa fa-heart" style="color:red;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-envelope" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-share" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                        </div>
+                        <div class="post-icons-4">
+                            <span class="fa fa-save" style="color:lightblue;font-size:36px;padding:10px 0;margin:0 auto;"></span>
+                        </div>
+                    </div>
+                    <div id="post-texts">
+                        <div class="likes">
+                            <div class=likes-pics>
+                                <img class="likes-pic-1" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-2" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-3" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            </div>
+                                <span class="liker">mmontufarq and 600 more users </span>like this pic</span>
+                        </div>
+                        <p class="description"><span class="user-name">ibaifernandezec </span>Here's the description of my picture...</p>
+                        <p class="comment-number">See 2.453 comments.</span></p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="time">27 DIC.</p>
+                        <div class="comment-box">
+                            <div class="emoji-selector"></div>
+                            <div class="comment-textbox">
+                                <form id="comment-form">
+                                    <label><input type="text" name="comment" placeholder="Add a comment..."</label>
+                                    <input type="submit" value="Publish">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post">
+                    <div class="post-header">
+                        <div class="user-id">
+                            <img class="user-profile-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            <span class="user-profile-name">Ibai Fernández</span>
+                        </div>
+                        <span class="three-dots">· · ·</span>
+                    </div>
+                    <img class="post-image" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div class="post-icons">
+                        <div class="post-icons-123">
+                            <span class="fa fa-heart" style="color:red;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-envelope" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                            <span class="fa fa-share" style="color:lightblue;font-size:36px;padding:10px;margin:0 auto;"></span>
+                        </div>
+                        <div class="post-icons-4">
+                            <span class="fa fa-save" style="color:lightblue;font-size:36px;padding:10px 0;margin:0 auto;"></span>
+                        </div>
+                    </div>
+                    <div id="post-texts">
+                        <div class="likes">
+                            <div class=likes-pics>
+                                <img class="likes-pic-1" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-2" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                                <img class="likes-pic-3" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                            </div>
+                                <span class="liker">mmontufarq and 600 more users </span>like this pic</span>
+                        </div>
+                        <p class="description"><span class="user-name">ibaifernandezec </span>Here's the description of my picture...</p>
+                        <p class="comment-number">See 2.453 comments.</span></p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="comment"><span class="commenter">Evaristo </span>Here's the description of my picture...</p>
+                        <p class="time">27 DIC.</p>
+                        <div class="comment-box">
+                            <div class="emoji-selector"></div>
+                            <div class="comment-textbox">
+                                <form id="comment-form">
+                                    <label><input type="text" name="comment" placeholder="Add a comment..."</label>
+                                    <input type="submit" value="Publish">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+
+            <div id="stories">
+                <h3>Stories</h3>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+                <div class="story">
+                    <img class="story-user-pic" src="https://ibaifernandez.com/wp-content/uploads/2021/04/Ibai-Ferna%CC%81ndez.jpeg">
+                    <div id="user-info">
+                        <h4 class="story-user">ibaifernandezec</h4>
+                        <h5 class="story-user-name">Ibai Fernández</h5>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+    </body>
+</html>
