@@ -203,6 +203,11 @@ a {
     margin:5px 15px;
 }
 
+.hashtag {
+    color:blue;
+    font-weight:bold;
+}
+
 .user-name, .commenter {
     font-weight:bold;
 } 
